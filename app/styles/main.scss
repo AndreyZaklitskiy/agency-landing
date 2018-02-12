@@ -1,0 +1,97 @@
+// bower:scss
+@import "bower_components/bootstrap-grid-sass/bootstrap-grid-sass.scss";
+// endbower
+
+
+
+// modules & sections
+
+@import "modules/sprite";
+@import "functions";
+@import "reset";
+@import "fonts";
+@import "variables";
+
+@import "sections/header";
+@import "sections/head-section";
+
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+
+html {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  line-height: 1.2;
+}
+
+
+h1 {
+  font-size: 159px;
+  font-family: $lemonmilkbold;
+  line-height: 80%;
+  opacity: 0.4;
+  text-align: center;
+  color: #fff;
+  span {
+    font-size: 96px;
+  }
+}
+
+h2 {
+  font-size: 62px;
+  font-family: $opensansregular;
+
+}
+h3 {
+  font-family: $latobold;
+  font-size: 40px;
+
+}
+
+h4 {
+  font-size: 30px;
+  font-family: $opensansextrabold;
+
+}
+h5 {
+
+}
+
+p {
+  font-family: $opensansregular;
+  font-size: 17px;
+
+}
+
+.btn {
+  height: 54px;
+  width: 192px;
+  border-radius: 15px;
+  font-family: $latobold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+
+.logo {
+  font-family: $latoblack;
+  font-size: 43px;
+  color: #fff;
+}
