@@ -1,0 +1,98 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title webapp
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+    // build:js scripts/vendor/modernizr.js
+    script(src='/bower_components/modernizr/modernizr.js')
+    // endbuild
+  body
+    header
+      .container
+        .header-menu-block
+          span.logo
+            | Agency
+          ul.header-menu
+            li.header-menu-item
+              a(href='#')
+                | Home
+            li.header-menu-item
+              a(href='#')
+                | About us
+            li.header-menu-item
+              a(href='#')
+                | Team
+            li.header-menu-item
+              a(href='#')
+                | Services
+            li.header-menu-item
+              a(href='#')
+                | Process
+            li.header-menu-item
+              a(href='#')
+                | Clients
+            li.header-menu-item
+              a(href='#')
+                | Work
+          a.loupe-icon(href='#')
+            img(src='images/icons/loupe-icon.png', alt='')
+          a.header-facebook-icon(href='#')
+            img(src='images/icons/facebook-icon.png', alt='')
+        h1
+          | Think
+          br
+          | outside
+          br
+          span of the box
+        img(src='images/Model.png', alt='')
+        a.header-btn(href='#')
+          | Read more
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+          function () {
+            (b[l].q = b[l].q || []).push(arguments)
+          });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/modernizr/modernizr.js')
+    // endbower
+    // endbuild
+    // build:js scripts/plugins.js
+    script(src='/bower_components/bootstrap/js/dist/util.js')
+    script(src='/bower_components/bootstrap/js/dist/alert.js')
+    script(src='/bower_components/bootstrap/js/dist/button.js')
+    script(src='/bower_components/bootstrap/js/dist/carousel.js')
+    script(src='/bower_components/bootstrap/js/dist/collapse.js')
+    script(src='/bower_components/bootstrap/js/dist/dropdown.js')
+    script(src='/bower_components/bootstrap/js/dist/modal.js')
+    script(src='/bower_components/bootstrap/js/dist/scrollspy.js')
+    script(src='/bower_components/bootstrap/js/dist/tab.js')
+    script(src='/bower_components/bootstrap/js/dist/tooltip.js')
+    script(src='/bower_components/bootstrap/js/dist/popover.js')
+    // endbuild
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
