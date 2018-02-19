@@ -14,6 +14,8 @@
 
 @import "sections/header";
 @import "sections/head-section";
+@import "sections/aboutCompany-section";
+@import "sections/capabilities-section";
 
 
 
@@ -41,21 +43,20 @@ body {
   line-height: 1.2;
 }
 
+.container {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
 
 h1 {
-  font-size: 159px;
-  font-family: $lemonmilkbold;
-  line-height: 80%;
-  text-align: center;
-  span {
-    font-size: 96px;
-  }
+
 }
 
 h2 {
   font-size: 62px;
-  font-family: $opensansregular;
-
+  font-family: $peacesans;
+  color: $header-color;
 }
 h3 {
   font-family: $latobold;
@@ -66,7 +67,8 @@ h3 {
 h4 {
   font-size: 30px;
   font-family: $opensansextrabold;
-
+  color: #6f6f6e;
+  line-height: 1.5;
 }
 h5 {
 
@@ -75,16 +77,21 @@ h5 {
 p {
   font-family: $opensansregular;
   font-size: 17px;
-
+  color: #6a6a6a;
 }
 
 .btn {
   height: 54px;
   width: 192px;
-  border-radius: 15px;
   font-family: $latobold;
   font-size: 22px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
 

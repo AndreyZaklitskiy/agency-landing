@@ -1,0 +1,37 @@
+.aboutCompany-section {
+  .container {
+    padding-top: 97px;
+    padding-bottom: 116px;
+    position: relative;
+  }
+}
+.aboutCompany-content {
+  h2 {
+    margin-bottom: 70px;
+  }
+  p {
+    max-width: 487px;
+    margin-bottom: 80px;
+
+  }
+  .btn-red {
+    @extend .btn;
+    background-color: $red;
+    color: #ffff;
+  }
+}
+.aboutCompany-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.macBook {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  right: -45%;
+  left: 0;
+  margin: auto;
+
+}
