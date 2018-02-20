@@ -1,4 +1,5 @@
 .working-section {
+  position: relative;
   .container {
     padding-top: 120px;
     padding-bottom: 210px;
@@ -18,10 +19,10 @@
 .working-list {
   display: flex;
   align-items: center;
+  z-index: 10;
   &-item {
     width: 310px;
     height: 300px;
-    background-color: $red;
     -webkit-transform: skew(150deg);
     -moz-transform: skew(150deg);
     -ms-transform: skew(150deg);
@@ -29,6 +30,7 @@
     transform: skew(150deg);
     margin-right: 60px;
     color: #ffff;
+    position: relative;
     h3 {
       -webkit-transform: skew(30deg);
       -moz-transform: skew(30deg);
@@ -40,7 +42,6 @@
       text-align: right;
       margin-right: 25px;
     }
-
     p {
       -webkit-transform: skew(30deg);
       -moz-transform: skew(30deg);
@@ -50,4 +51,58 @@
       color: #fff;
     }
   }
+}
+.idea {
+  &::before {
+    content: '';
+    background-image: url(/images/idea.png);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
+  }
+  //background-image: url(/images/idea.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.design {
+  background-image: url(/images/design.png);
+}
+.output {
+  background-image: url(/images/output.png);
+}
+
+
+.working-section-triangle-black {
+  width: 0;
+  height: 0;
+  border-top: 230px solid transparent;
+  border-left: 215px solid black;
+  border-bottom: 230px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+}
+.working-section-triangle-red {
+  width: 0;
+  height: 0;
+  border-top: 575px solid transparent;
+  border-right: 575px solid $red;
+  border-bottom: 575px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 5;
 }
