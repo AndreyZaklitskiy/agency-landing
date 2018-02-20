@@ -1,9 +1,9 @@
 .capabilities-section {
+  position: relative;
+  background-color: #F5F5F5;
   .container {
-    background-color: #F5F5F5;
     position: relative;
     padding-top: 90px;
-    padding-bottom: 105px;
     h2 {
       text-align: center;
       margin-bottom: 76px;
@@ -22,14 +22,124 @@ flex-wrap: wrap;
   }
 }
 .capabilities-block-item {
+  margin-bottom: 100px;
+  &-header {
+    display: flex;
+    align-items: center;
+    .circle {
+      width: 75px;
+      height: 75px;
+      background-color: $red;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      margin-right: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+  }
+  p {
+    padding-left: 100px;
+  }
+}
+
+.creative-work {
   &::before {
     content: '';
-    display: block;
-    width: 75px;
-    height: 75px;
-    background-color: $red;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
+    display: inline-block;
+    @include sprite($flag-icon);
+  }
+}
+.we-do-best {
+  &::before {
+    content: '';
+    display: inline-block;
+    @include sprite($monitor-icon);
+  }
+}
+.best-company {
+  &::before {
+    content: '';
+    display: inline-block;
+    @include sprite($chart-icon);
+  }
+}
+.nice-idea {
+  &::before {
+    content: '';
+    display: inline-block;
+    @include sprite($operator-icon);
+  }
+}
+.professional {
+  &::before {
+    content: '';
+    display: inline-block;
+    @include sprite($pointer-icon);
+  }
+}
+.great-services {
+  &::before {
+    content: '';
+    display: inline-block;
+    @include sprite($envelope-icon);
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-left: 100px solid $red;
+  border-bottom: 100px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  margin: auto;
+}
+
+
+@media (max-width: 480px) {
+  .capabilities-section {
+    .container {
+      h2 {
+        font-size: 52px;
+        margin-bottom: 46px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .capabilities-section {
+    .container {
+      h2 {
+        font-size: 42px;
+      }
+    }
+  }
+  .capabilities-block-item {
+    margin-bottom: 50px;
+    &-header {
+      flex-direction: column;
+      .circle {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      padding-left: 0;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+  .triangle {
+    border-top: 200px solid transparent;
+    border-left: 50px solid $red;
+    border-bottom: 200px solid transparent;
   }
 }

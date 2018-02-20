@@ -3,6 +3,7 @@
     padding-top: 97px;
     padding-bottom: 116px;
     position: relative;
+    width: 100%;
   }
 }
 .aboutCompany-content {
@@ -14,17 +15,13 @@
     margin-bottom: 80px;
 
   }
-  .btn-red {
-    @extend .btn;
-    background-color: $red;
-    color: #ffff;
-  }
 }
 .aboutCompany-bg {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -1;
+  width: 75%;
 }
 .macBook {
   position: absolute;
@@ -33,5 +30,5 @@
   right: -45%;
   left: 0;
   margin: auto;
-
+  width: 50%;
 }

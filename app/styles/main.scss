@@ -16,6 +16,7 @@
 @import "sections/head-section";
 @import "sections/aboutCompany-section";
 @import "sections/capabilities-section";
+@import "sections/working-section";
 
 
 
@@ -41,12 +42,6 @@ body {
   overflow: hidden;
   min-height: 100%;
   line-height: 1.2;
-}
-
-.container {
-  margin-right: 0;
-  margin-left: 0;
-  width: 100%;
 }
 
 h1 {
@@ -78,6 +73,7 @@ p {
   font-family: $opensansregular;
   font-size: 17px;
   color: #6a6a6a;
+  line-height: 1.5;
 }
 
 .btn {
@@ -93,7 +89,11 @@ p {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-
+.btn-red {
+  @extend .btn;
+  background-color: $red;
+  color: #ffff;
+}
 
 .logo {
   font-family: $latoblack;
