@@ -1,0 +1,34 @@
+.slider-section {
+  background-color: #F5F5F5;
+  .container {
+    padding-top: 105px;
+    padding-bottom: 105px;
+    display: flex;
+    justify-content: center;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+
+
+.slide-stiles {
+  width: 225px;
+  height: 225px;
+  //border: 13px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  img {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+  }
+}

@@ -12,10 +12,13 @@ html.no-js(lang='')
     // endbower
     // endbuild
     // build:css styles/main.css
-    link(rel='stylesheet', href='styles/main.css')
+    link(rel='stylesheet' href='styles/main.css')
+    link(rel='stylesheet' href='slick/slick.css')
+    //link(rel='stylesheet' href='slick/slick-theme.css')
     // endbuild
     // build:js scripts/vendor/modernizr.js
     script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/slick/slick.min.js')
     // endbuild
   body
     header
@@ -157,6 +160,64 @@ html.no-js(lang='')
              | Output
             p
              | Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+
+    .slider-section
+      .container
+        h2
+         | Our creative team
+      .team-slider
+        .team-slider-slide.slide-stiles
+          img(src='images/girl.png')
+          span.slide-name
+           | Shaina Doe
+          span.position
+           | Designer
+
+        .team-slider-slide.slide-stiles
+          img(src='images/')
+          span.slide-name
+           | John Rock
+          span.position
+           | programmer
+
+        .team-slider-slide.slide-stiles
+          img(src='images/')
+          span.slide-name
+           | Stepanida Drimovna
+          span.position
+           | manager
+
+
+
+
+
+    //team-slider (slick)
+    script.
+      $('.team-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
